@@ -383,6 +383,28 @@ body {
 	font-size: x-large;
 	background-color: #1bbb35;
 	box-shadow: 0 0 10px 1px rgb(51, 51, 51);
+	transition: all 75ms ease-in-out;
+	border-radius: 10px;
+	text-decoration: none;
+	width: 150px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.loginBtn img {
+	width: 35px;
+	margin-right: 5px;
+}
+
+.loginBtn:hover {
+	background-color: rgb(48, 151, 48);
+}
+
+.loginBtn:active {
+	background-color: rgb(44, 85, 44);
 }
 
 .signUp {
