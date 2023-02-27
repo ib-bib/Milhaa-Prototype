@@ -397,10 +397,6 @@ body {
 	vertical-align: bottom;
 }
 
-.signUp img:hover {
-	src: url(./images/icons8-sign-up-64(1).png);
-}
-
 .signUp img,
 .signUp span {
 	cursor: pointer;
