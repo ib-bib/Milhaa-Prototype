@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<!--  -->
+		<title>Milhaa</title>
+	</head>
+	<body>
+		<ul class="circles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		<div class="container">
+			<div class="topBar">MILHAA</div>
+			<div class="miniContainer">
+				<img src="./images/arrow-left.png" onclick="history.back()" />
+				<h3>Profile</h3>
+			</div>
+			<main class="profileContent">
+				<img
+					class="profileIcon"
+					src="./images/icons8-male-user-96.png"
+				/>
+				<!-- form beginning -->
+				<form>
+					<img
+						class="formIcon"
+						src="./images/icons8-male-user-48.png"
+					/>
+					<label>Name : </label>
+					<input
+						name="name"
+						type="text"
+						placeholder="FirstName LastName"
+					/>
+					<br />
+					<img
+						class="formIcon"
+						src="./images/icons8-mail-50-green.png"
+					/>
+					<label>E-mail : </label
+					><input
+						name="email"
+						type="email"
+						placeholder="name@mail.com"
+					/>
+					<br />
+					<img
+						class="formIcon"
+						src="./images/icons8-phone-48-green.png"
+					/>
+					<label>Phone : </label>
+					<!-- dropdown start -->
+					<select
+						id="zipCodeDlist"
+						name="zipCode"
+						class="zipCodeDlist"
+						onchange="newPlaceholder()"
+					>
+						<option title="Sudan" value="Sudan">+249</option>
+						<option title="United States" value="United States">
+							+1
+						</option>
+						<option title="United Kingdom" value="United Kingdom">
+							+44
+						</option>
+					</select>
+					<!-- dropdown end -->
+					<input
+						id="phoneField"
+						name="phone"
+						type="tel"
+						placeholder="12-345-6789"
+						pattern="[0-9]{2}-[0-9]{3}-[0-9]{4}"
+					/>
+					<div class="saveORcancel">
+						<button class="saveBtn">Save</button>
+						<button class="cancelBtn">Cancel</button>
+					</div>
+				</form>
+				<div class="removeAccount">
+					<img src="./images/icons8-trash-can-24-gray.png" />
+					<span>Remove Account</span>
+				</div>
+				<div class="logOut">
+					<img
+						height="30"
+						src="./images/icons8-walking-skin-type-1-48.png"
+					/>
+					<span>Log out</span>
+				</div>
+			</main>
+		</div>
+	</body>
+	<script src="./app.js" type="text/javascript"></script>
+</html>

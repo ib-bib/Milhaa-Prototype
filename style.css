@@ -220,3 +220,128 @@ body {
 	height: 50px;
 	background-color: rgb(44, 85, 44);
 }
+
+.miniContainer {
+	background-color: rgb(100, 100, 100);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: white;
+	font-size: x-large;
+	font-weight: 300;
+	height: 70px;
+	border-bottom: 1px solid white;
+}
+
+.miniContainer img {
+	cursor: pointer;
+}
+
+.miniContainer img:active {
+	scale: 0.9;
+}
+
+.profileContent {
+	background-color: rgb(100, 100, 100);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 680px;
+	border-radius: 0px 0px 15px 15px;
+	color: white;
+	font-size: 25px;
+}
+
+.formIcon {
+	width: 25px;
+	height: 25px;
+	vertical-align: bottom;
+}
+
+.profileContent form {
+	width: 100%;
+	padding-left: 75px;
+}
+
+.profileIcon {
+	width: 200px;
+	height: 200px;
+	margin-top: 40px;
+}
+
+.profileContent input {
+	background-color: rgb(100, 100, 100);
+	border: none;
+	border-bottom: 1px solid white;
+	width: 300px;
+	color: white;
+	font-size: 20px;
+	margin-top: 25px;
+}
+
+.profileContent input[type="tel"] {
+	width: 225px;
+}
+
+.profileContent .saveORcancel {
+	margin-top: 40px;
+}
+
+.zipCodeDlist {
+	background-color: rgb(100, 100, 100);
+	border: none;
+	color: white;
+	font-size: 18px;
+}
+
+.saveBtn,
+.cancelBtn {
+	color: white;
+	background-color: rgb(61, 119, 61);
+	border: none;
+	width: 150px;
+	height: 45px;
+	cursor: pointer;
+	font-size: 20px;
+	border-radius: 15px;
+}
+
+.saveBtn {
+	margin-right: 50px;
+	margin-left: 100px;
+}
+
+.cancelBtn:hover,
+.saveBtn:hover {
+	background-color: rgb(48, 151, 48);
+}
+
+.cancelBtn:active,
+.saveBtn:active {
+	background-color: rgb(44, 85, 44);
+}
+
+.removeAccount {
+	margin-top: 40px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	color: black;
+}
+
+.removeAccount img,
+.removeAccount span,
+.logOut img,
+.logOut span {
+	cursor: pointer;
+}
+
+.logOut {
+	margin-top: 50px;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 60px;
+}
