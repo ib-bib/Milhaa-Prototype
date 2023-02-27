@@ -25,7 +25,9 @@
 		<div class="container">
 			<div class="topBar">MILHAA</div>
 			<div class="miniContainer">
-				<img src="./images/arrow-left.png" onclick="history.back()" />
+				<a href="./index.html">
+					<img src="./images/arrow-left.png" />
+				</a>
 				<h3>Profile</h3>
 			</div>
 			<main class="profileContent">
@@ -41,6 +43,7 @@
 					/>
 					<label>Name : </label>
 					<input
+						class="profileInput"
 						name="name"
 						type="text"
 						placeholder="FirstName LastName"
@@ -52,6 +55,7 @@
 					/>
 					<label>E-mail : </label
 					><input
+						class="profileInput"
 						name="email"
 						type="email"
 						placeholder="name@mail.com"
@@ -79,6 +83,7 @@
 					</select>
 					<!-- dropdown end -->
 					<input
+						class="profileInput"
 						id="phoneField"
 						name="phone"
 						type="tel"

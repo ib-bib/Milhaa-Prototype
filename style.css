@@ -202,6 +202,7 @@ body {
 	color: white;
 	transition: all 75ms ease-in-out;
 	border-radius: 10px;
+	text-decoration: none;
 }
 
 .skipBtn img {
@@ -254,6 +255,10 @@ body {
 	font-size: 25px;
 }
 
+.smartParkingIcon {
+	margin-top: 100px;
+}
+
 .formIcon {
 	width: 25px;
 	height: 25px;
@@ -271,7 +276,7 @@ body {
 	margin-top: 40px;
 }
 
-.profileContent input {
+.profileInput {
 	background-color: rgb(100, 100, 100);
 	border: none;
 	border-bottom: 1px solid white;
@@ -344,4 +349,59 @@ body {
 	display: flex;
 	justify-content: flex-end;
 	padding-right: 60px;
+}
+
+.smartParkingIcon {
+	margin-bottom: 30px;
+}
+
+.loginInput {
+	border-radius: 15px;
+	border: none;
+	background-color: white;
+	width: 350px;
+	height: 40px;
+	margin-bottom: 30px;
+	display: flex;
+	align-items: center;
+	padding-left: 10px;
+}
+
+.loginInput input {
+	width: 275px;
+	height: 80%;
+	margin-left: 10px;
+	border: none;
+}
+
+.loginInput input:active,
+.loginInput input:focus {
+	outline: none;
+}
+
+.loginBtn {
+	font-size: x-large;
+	background-color: #1bbb35;
+	box-shadow: 0 0 10px 1px rgb(51, 51, 51);
+}
+
+.signUp {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 75px;
+}
+
+.signUp img {
+	vertical-align: bottom;
+}
+
+.signUp img:hover {
+	src: url(./images/icons8-sign-up-64(1).png);
+}
+
+.signUp img,
+.signUp span {
+	cursor: pointer;
 }
