@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<!--  -->
+		<title>Milhaa</title>
+	</head>
+	<body>
+		<ul class="circles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		<div class="container">
+			<div class="topBar">MILHAA</div>
+			<div class="miniContainer">
+				<a href="./index.html">
+					<img src="./images/arrow-left.png" />
+				</a>
+				<h3>Admin</h3>
+			</div>
+			<main class="mainContent">
+				<div class="adminIconRow">
+					<span class="mrCustom">
+						<div class="adminIcon">
+							<img src="./images/icons8-support-48.png" />
+						</div>
+						<div>Management</div>
+					</span>
+					<a class="flexCenter" href="./reports.html">
+						<div class="adminIcon">
+							<img src="./images/icons8-clipboard-80.png" />
+						</div>
+						<div>Reports</div>
+					</a>
+				</div>
+				<div class="adminIconRow">
+					<a class="mrCustom flexCenter" href="./parkings.html">
+						<div class="adminIcon">
+							<img src="./images/icons8-p-50.png" />
+						</div>
+						<div>Parkings</div>
+					</a>
+					<a class="flexCenter" href="./profile.html">
+						<div class="adminIcon">
+							<img src="./images/icons8-user-60.png" />
+						</div>
+						<div>Profile</div>
+					</a>
+				</div>
+				<div class="buttonPanel">
+					<button
+						class="settingsBtn"
+						onclick="displaySettingsModal()"
+					>
+						<img src="./images/icons8-automatic-24(2).png" />
+						Settings
+					</button>
+					<a class="logOutLink" href="./index.html">
+						<img
+							src="./images/walking-skin-type-1-48.png"
+							width="24"
+							height="24"
+						/>Log out
+					</a>
+				</div>
+			</main>
+		</div>
+		<!-- Pop-up -->
+		<div id="settingsModal" class="modal">
+			<div class="modal-content">
+				<div class="close" onclick="hideSettingsModal()">&times;</div>
+				<p>Settings</p>
+			</div>
+		</div>
+	</body>
+	<script src="./app.js" type="text/javascript"></script>
+</html>

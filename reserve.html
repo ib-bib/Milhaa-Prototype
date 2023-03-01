@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<!--  -->
+		<title>Milhaa</title>
+	</head>
+	<body>
+		<ul class="circles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		<div class="container">
+			<div class="topBar">MILHAA</div>
+			<div class="miniContainer">
+				<a href="./index.html">
+					<img src="./images/arrow-left.png" />
+				</a>
+				<h3>Reserve</h3>
+			</div>
+			<main class="mainContent">
+				<div class="note">
+					<strong>Note: </strong>This space will reserved once you
+					click submit
+				</div>
+				<table class="reserve">
+					<tr>
+						<td>Parking Info</td>
+						<td id="lotSpace">Gridiron-KH/</td>
+					</tr>
+					<tr>
+						<td>Reservation Time</td>
+						<td id="curTime">00:00 AM</td>
+					</tr>
+					<tr>
+						<td>Date</td>
+						<td id="curDate">00-00-0000</td>
+					</tr>
+					<tr>
+						<td>Price</td>
+						<td>1000 SDG</td>
+					</tr>
+				</table>
+				<button class="loginBtn" style="border: none">Submit</button>
+				<a class="logOut" href="./index.html" style="margin-top: 120px">
+					<img src="./images/icons8-walking-24.png" height="30" /> Log
+					out
+				</a>
+			</main>
+		</div>
+	</body>
+	<script src="./app.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		document.onload = assignValues();
+	</script>
+</html>

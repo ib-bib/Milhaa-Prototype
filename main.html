@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<title>MILHAA</title>
+	</head>
+	<body>
+		<ul class="circles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		<div class="container">
+			<div class="topBar">MILHAA</div>
+			<div class="miniContainer">
+				<a href="./index.html">
+					<img src="./images/arrow-left.png" />
+				</a>
+				<h3>Main</h3>
+			</div>
+			<main class="mainContent">
+				<div class="parkingLot">
+					<div class="sectionA">
+						<a
+							class="vacant"
+							href="./reserve.html"
+							onclick="setLotSpace('A1')"
+						>
+							<div>A1</div>
+							<div class="vacantTXT">Vacant</div>
+							<div class="vacantTXT">&#10004;</div>
+						</a>
+						<span class="occupied">
+							<div>A2</div>
+							<div class="occupiedTXT">Occupied</div>
+							<div class="occupiedTXT">&#10006;</div>
+						</span>
+						<a
+							class="vacant"
+							href="./reserve.html"
+							onclick="setLotSpace('A3')"
+						>
+							<div>A3</div>
+							<div class="vacantTXT">Vacant</div>
+							<div class="vacantTXT">&#10004;</div>
+						</a>
+						<span class="occupied lastChild">
+							<div>A4</div>
+							<div class="occupiedTXT">Occupied</div>
+							<div class="occupiedTXT">&#10006;</div>
+						</span>
+					</div>
+					<div class="sectionB">
+						<span class="occupied">
+							<div>B1</div>
+							<div class="occupiedTXT">Occupied</div>
+							<div class="occupiedTXT">&#10006;</div>
+						</span>
+						<a
+							class="vacant"
+							href="./reserve.html"
+							onclick="setLotSpace('B2')"
+						>
+							<div>B2</div>
+							<div class="vacantTXT">Vacant</div>
+							<div class="vacantTXT">&#10004;</div>
+						</a>
+						<a
+							class="vacant"
+							href="./reserve.html"
+							onclick="setLotSpace('B3')"
+						>
+							<div>B3</div>
+							<div class="vacantTXT">Vacant</div>
+							<div class="vacantTXT">&#10004;</div>
+						</a>
+						<span class="occupied lastChild">
+							<div>B4</div>
+							<div class="occupiedTXT">Occupied</div>
+							<div class="occupiedTXT">&#10006;</div>
+						</span>
+					</div>
+				</div>
+				<h3>Parking Management System</h3>
+				<div class="buttonPanel">
+					<a class="profileLink" href="./profile.html">
+						<img src="./images/icons8-user-24.png" /> Profile
+					</a>
+					<button
+						class="settingsBtn"
+						onclick="displaySettingsModal()"
+					>
+						<img src="./images/icons8-automatic-24(2).png" />
+						Settings
+					</button>
+					<button class="helpBtn" onclick="displayHelpModal()">
+						<img
+							src="./images/icons8-ask-question-30.png"
+							width="24"
+							height="24"
+						/>
+						Help
+					</button>
+					<a class="logOutLink" href="./index.html">
+						<img
+							src="./images/walking-skin-type-1-48.png"
+							width="24"
+							height="24"
+						/>Log out
+					</a>
+				</div>
+			</main>
+		</div>
+		<!-- Pop-ups -->
+		<div id="settingsModal" class="modal">
+			<div class="modal-content">
+				<div class="close" onclick="hideSettingsModal()">&times;</div>
+				<p>Settings</p>
+			</div>
+		</div>
+		<div id="helpModal" class="modal">
+			<div class="modal-content">
+				<div class="close" onclick="hideHelpModal()">&times;</div>
+				<p>Help</p>
+			</div>
+		</div>
+	</body>
+	<script src="./app.js" type="text/javascript"></script>
+</html>

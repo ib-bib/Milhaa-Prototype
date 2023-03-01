@@ -244,7 +244,7 @@ body {
 	scale: 0.9;
 }
 
-.profileContent {
+.mainContent {
 	background-color: rgb(100, 100, 100);
 	display: flex;
 	flex-direction: column;
@@ -265,7 +265,7 @@ body {
 	vertical-align: bottom;
 }
 
-.profileContent form {
+.mainContent form {
 	width: 100%;
 	padding-left: 75px;
 }
@@ -284,13 +284,14 @@ body {
 	color: white;
 	font-size: 20px;
 	margin-top: 25px;
+	outline: none;
 }
 
-.profileContent input[type="tel"] {
+.mainContent input[type="tel"] {
 	width: 225px;
 }
 
-.profileContent .saveORcancel {
+.mainContent .saveORcancel {
 	margin-top: 40px;
 }
 
@@ -311,6 +312,7 @@ body {
 	cursor: pointer;
 	font-size: 20px;
 	border-radius: 15px;
+	box-shadow: 0 0 150px black;
 }
 
 .saveBtn {
@@ -382,7 +384,7 @@ body {
 .loginBtn {
 	font-size: x-large;
 	background-color: #1bbb35;
-	box-shadow: 0 0 10px 1px rgb(51, 51, 51);
+	box-shadow: 0 0 50px 1px rgb(51, 51, 51);
 	transition: all 75ms ease-in-out;
 	border-radius: 10px;
 	text-decoration: none;
@@ -392,6 +394,9 @@ body {
 	justify-content: center;
 	align-items: center;
 	cursor: pointer;
+	text-decoration: none;
+	color: white;
+	margin-bottom: 30px;
 }
 
 .loginBtn img {
@@ -422,4 +427,336 @@ body {
 .signUp img,
 .signUp span {
 	cursor: pointer;
+	/* color: white; */
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.parkingLot {
+	margin-top: 50px;
+	height: 420px;
+	width: 630px;
+	background-image: url(./images/parking-lot-graphic.png);
+	border-radius: 25px;
+}
+
+.sectionA,
+.sectionB {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.sectionB {
+	margin-top: 120px;
+}
+
+.vacant,
+.occupied {
+	margin-top: 7px;
+	margin-left: 7px;
+	width: 140px;
+	height: 140px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+	transition: all 75ms ease-in-out;
+	background-color: rgb(45, 45, 45);
+	border-radius: 25px;
+}
+
+/* override margin */
+.lastChild {
+	margin-right: 4px;
+}
+/*  */
+
+.vacant {
+	cursor: pointer;
+}
+
+.vacant:hover {
+	-webkit-animation: glow 1s ease-in-out infinite alternate;
+	-moz-animation: glow 1s ease-in-out infinite alternate;
+	animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+	from {
+		text-shadow: 0 0 5px rgb(0, 255, 0), 0 0 10px rgb(0, 255, 0),
+			0 0 15px rgb(0, 128, 0), 0 0 20px rgb(0, 128, 0),
+			0 0 25px rgb(0, 128, 0), 0 0 30px rgb(0, 128, 0),
+			0 0 35px rgb(0, 128, 0);
+	}
+	to {
+		text-shadow: 0 0 10px rgb(0, 255, 0), 0 0 15px rgb(23, 216, 23),
+			0 0 20px rgb(25, 255, 25), 0 0 25px rgb(25, 255, 25),
+			0 0 30px rgb(25, 255, 25), 0 0 35px rgb(25, 255, 25),
+			0 0 40px rgb(25, 255, 25);
+	}
+}
+
+.vacantTXT {
+	font-size: 30px;
+	color: rgb(0, 255, 0);
+}
+
+.occupied:active,
+.occupied:focus {
+	animation: shake 0.5s;
+}
+
+@keyframes shake {
+	0% {
+		transform: translate(1px, 1px) rotate(0deg);
+	}
+	10% {
+		transform: translate(-1px, -2px) rotate(-1deg);
+	}
+	20% {
+		transform: translate(-3px, 0px) rotate(1deg);
+	}
+	30% {
+		transform: translate(3px, 2px) rotate(0deg);
+	}
+	40% {
+		transform: translate(1px, -1px) rotate(1deg);
+	}
+	50% {
+		transform: translate(-1px, 2px) rotate(-1deg);
+	}
+	60% {
+		transform: translate(-3px, 1px) rotate(0deg);
+	}
+	70% {
+		transform: translate(3px, 1px) rotate(-1deg);
+	}
+	80% {
+		transform: translate(-1px, -1px) rotate(1deg);
+	}
+	90% {
+		transform: translate(1px, 2px) rotate(0deg);
+	}
+	100% {
+		transform: translate(1px, -2px) rotate(-1deg);
+	}
+}
+
+.occupiedTXT {
+	font-size: 30px;
+	color: rgb(255, 0, 0);
+}
+
+.buttonPanel {
+	margin-top: 40px;
+	font-size: 22px;
+	font-weight: 500;
+}
+
+.settingsBtn,
+.helpBtn {
+	background-color: rgb(100, 100, 100);
+	border: none;
+	color: white;
+	margin-right: 30px;
+	font-weight: lighter !important;
+	font-size: 22px !important;
+	cursor: pointer;
+}
+
+.profileLink {
+	margin-right: 30px;
+}
+
+.settingsBtn img {
+	vertical-align: text-top;
+}
+
+.helpBtn img {
+	vertical-align: baseline;
+}
+
+.modal {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	left: 0;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 1;
+	display: block;
+	color: white;
+	position: fixed;
+	padding-top: 100px;
+	font-size: 25px;
+	display: none;
+}
+
+.modal-content {
+	position: relative;
+	background-color: rgb(58, 58, 58);
+	width: 50%;
+	border: 1px solid white;
+	margin: auto;
+	border-radius: 15px;
+	height: 50%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-webkit-animation-name: animatetop;
+	-webkit-animation-duration: 0.5s;
+	animation-name: animatetop;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+}
+
+@-webkit-keyframes animatetop {
+	from {
+		top: -300px;
+		opacity: 0;
+	}
+	to {
+		top: 0;
+		opacity: 1;
+	}
+}
+
+@keyframes animatetop {
+	from {
+		top: -300px;
+		opacity: 0;
+	}
+	to {
+		top: 0;
+		opacity: 1;
+	}
+}
+
+.close {
+	float: right;
+	margin-right: 30px;
+	font-size: 50px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: rgb(180, 180, 180);
+	text-decoration: none;
+}
+
+.modal-content p {
+	margin-top: 50px;
+	margin-left: 30px;
+}
+
+.adminIconRow {
+	width: 100%;
+	height: 102px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 150px;
+}
+
+.adminIconRow:first-child {
+	margin-top: 75px;
+}
+
+.adminIcon {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background-color: rgb(61, 119, 61);
+	box-shadow: 0 0 750px 1px black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.adminIcon:hover {
+	cursor: pointer;
+	background-color: rgb(48, 151, 48);
+}
+
+.adminIcon:active,
+.adminIcon:focus {
+	background-color: rgb(44, 85, 44);
+	scale: 0.95;
+}
+
+.mrCustom {
+	margin-right: 150px;
+}
+
+.flexCenter {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.parkingInfo {
+	color: rgb(134, 228, 130);
+	align-self: flex-start;
+}
+
+.report {
+	margin-top: 100px;
+	background-color: aqua;
+	border: 1px solid black;
+	border-radius: 25px;
+	border-spacing: 0;
+	width: 600px;
+	height: 450px;
+	color: black;
+}
+
+.report th,
+.report td {
+	border-right: 1px solid rgb(115, 115, 115);
+	border-bottom: 1px solid rgb(115, 115, 115);
+}
+
+.report td {
+	padding-left: 10px;
+}
+
+.rowR {
+	border-right: none;
+}
+
+.lastRow {
+	border-bottom: none;
+}
+
+.ID {
+	font-weight: bold;
+	padding-left: 10px;
+}
+
+.note {
+	width: 70%;
+	word-wrap: break-word;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	color: rgb(128, 0, 0);
+}
+
+.reserve {
+	background-color: aqua;
+	color: black;
+	width: 400px;
+	height: 200px;
+	border-spacing: 0;
+	margin-bottom: 50px;
+}
+
+.reserve td {
+	border-right: 1px solid rgb(115, 115, 115);
+	border-bottom: 1px solid rgb(115, 115, 115);
+	padding-left: 10px;
 }

@@ -31,43 +31,40 @@
 				<h3>Login</h3>
 			</div>
 			<main class="mainContent">
-				<img
-					class="smartParkingIcon"
-					src="./images/icons8-smart-parking-100.png"
-				/>
-				<h2>Smart Parking</h2>
-				<div class="loginInput">
-					<img height="25" src="./images/icons8-envelope-50.png" />
-					<input
-						type="email"
-						id="emailLogin"
-						placeholder="Email"
-						class="loginEmail"
-					/>
+				<h2>Parking Information</h2>
+				<div style="width: 55%">
+					<label class="parkingInfo">Park ID :</label>
+					<div class="loginInput">
+						<input type="text" placeholder="Enter ID" />
+					</div>
+					<label class="parkingInfo">Park Information :</label>
+					<div class="loginInput">
+						<input type="text" placeholder="Enter information" />
+					</div>
+					<label class="parkingInfo">Price :</label>
+					<div class="loginInput">
+						<input type="text" placeholder="Enter price" />
+					</div>
 				</div>
-				<div class="loginInput">
-					<img height="25" src="./images/icons8-lock-50.png" />
-					<input
-						type="password"
-						id="passLogin"
-						placeholder="Password"
-						class="loginPass"
-					/>
-				</div>
-				<a
-					id="loginBtn"
-					class="loginBtn"
-					href="./main.html"
-					onclick="adminORmain()"
-				>
-					<img src="./images/log-out-svgrepo-com.svg" />
-					Log in
-				</a>
-				<div class="signUp">
-					<a href="./signup.html">
-						<img src="./images/icons8-sign-up-64.png" width="40" />
-						<span>Sign up</span>
-					</a>
+				<div class="buttonPanel">
+					<button
+						class="saveBtn"
+						style="margin-left: 0; margin-right: 0"
+					>
+						Add
+					</button>
+					<button
+						class="saveBtn"
+						style="margin-left: 0; margin-right: 0"
+					>
+						Update
+					</button>
+					<button
+						class="saveBtn"
+						style="margin-left: 0; margin-right: 0"
+					>
+						Delete
+					</button>
 				</div>
 			</main>
 		</div>
